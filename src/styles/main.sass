@@ -1,0 +1,16 @@
+.container
+    margin: auto 20rem
+
+    @include maxWidth(768px)
+        margin: auto 0.8rem
+
+    @include minMaxWidth($minWidth: 768px, $maxWidth: 1500px)
+        margin: auto 3rem
+
+    @include minMaxWidth($minWidth: 769px, $maxWidth: 900px)
+        margin: auto 1rem
+
+.grid
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(1, 1fr)

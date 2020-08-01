@@ -1,0 +1,14 @@
+@function spacing($space)
+    @return $space * 8px
+
+@mixin maxWidth($maxWidth)
+    @media only screen and (max-width: $maxWidth)
+        @content
+  
+@mixin minWidth($minWidth)
+    @media only screen and (min-width: $minWidth)
+        @content
+
+@mixin minMaxWidth($minWidth, $maxWidth)
+    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth)
+        @content

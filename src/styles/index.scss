@@ -1,0 +1,8 @@
+$body-color: blue;
+
+body {
+  color: $body-color;
+}
+
+@import "shared.sass";
+@import "main.sass";
