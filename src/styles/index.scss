@@ -1,8 +1,21 @@
-$body-color: blue;
-
 body {
-  color: $body-color;
+  font-family: "Montserrat", -apple-system, "Roboto", sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: -apple-system, "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @import "shared.sass";
+@import "decoration.sass";
 @import "main.sass";
+@import "nav.sass";
+@import "buttons.sass";
+@import "hero.sass";
+@import "work.sass";

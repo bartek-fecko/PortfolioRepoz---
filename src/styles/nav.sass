@@ -1,0 +1,33 @@
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    grid-column: 1 / 12
+
+    * 
+        font-weight: 500
+        font-size: 1rem
+        color: $font-color-primary
+
+    ul
+        display: flex
+        justify-content: flex-end
+        list-style-type: none
+        
+        li
+            margin-left: 3rem
+            display: flex
+            align-items: center
+            cursor: pointer
+
+    .nav__logo
+        color: #1C1D1E
+
+@include maxWidth($maxWidth: 730px)
+    nav 
+        ul
+            display: none
+    
+        .nav__logo
+            padding: 1rem 0
+    

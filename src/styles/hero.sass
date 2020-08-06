@@ -1,0 +1,65 @@
+$main-margin-top: 4rem
+
+main
+    grid-column: 1 / 7
+    margin-top: $main-margin-top
+    position: relative
+
+    h1 
+        font-size: 3em
+        font-weight: 600
+
+    p
+        margin: 3em 0
+
+    .circle
+        width: 4rem
+        height: 4rem
+        left: -4rem
+        top: 0
+        z-index: -1
+
+.main-ilustatrion
+    grid-column: 9 / 12
+    position: relative
+    margin-top: $main-margin-top
+
+    img
+        width: 160%
+
+    .rectangle
+        position: absolute
+        top: 40%
+        z-index: -1
+        
+        @include maxWidth($maxWidth: 1030px)
+            & 
+                height: 13rem    
+
+        @include maxWidth($maxWidth: 928px)
+            & 
+                height: 10rem
+                top: 30%
+
+        @include minMaxWidth($minWidth: 1030px, $maxWidth: 1060px)
+            &
+                height: 50%
+
+        @include minMaxWidth($minWidth: 1400px, $maxWidth: 1507px)
+            &
+                height: 60%
+
+.circle
+    left: -80px
+    top: 600px
+    width: 200px
+    height: 200px
+
+
+@include maxWidth($maxWidth: 730px)
+    .main-ilustatrion
+        display: none
+
+    main
+        grid-column: 1 / 13
+
